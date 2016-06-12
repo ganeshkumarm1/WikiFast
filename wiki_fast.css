@@ -1,66 +1,63 @@
-body {
-  background: #009688 !important;
-}
-#search_box {
-  margin-top: 20px;
-  margin-bottom: 30px;
-  width: 400px;
-  margin-left:450px;
-  border-redius: 0px;
-   -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-font-family: product sans;
-  color: black;
-  
-}
-#search_button {
-  margin-top: 20px;
-  border-redius: 0px;
-  margin-left: 150px; 
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
+html, main, body {
+  background-color: #202833 !important;
 }
 
-h2 {
-  margin-left: 530px;
-  font-size: 300% !important;
-  font-family: dejavu sans !important;
-  font-weight: bold !important;
+h1 {
   color: white !important;
+  font-family: arial;
+  margin-top: 50px !important;
+  margin-bottom: 15px;
+  transition: 1s;
+}
+#p_title {
+  font-size: 15px;
+  font-family: arial;
+  font-weight: bold;
+  color: black;
 }
 
-#main {
-  margin-top:50px;
+input {
+  width: 30% !important;
+  margin-bottom: 15px !important;
 }
-
-body {
-  width: 1336px;
+#p_content {
+  font-size: 12px;
+  font-family: monospace;
+  color: black;
 }
 
 #each_result {
-  background: white;
-  border-left: solid 5px black;
-  padding: 10px 20px 10px 20px;
-  margin: 20px 150px 20px 150px;
+  background-color: white;
+  border: solid 1px white;
+  padding: 10px 10px 10px 10px;
+  margin: 15px 50px 15px 50px;
+  box-shadow: 0 0 20px #212121;
+  transition: 1s !important;
+}
+#search_button, #random {
+  transform: scale(1,1);
+   padding: 5px 65px 5px 65px;
+    margin-right: 5px;
+}
+a, a:hover{
+  text-decoration: none !important;
+}
+a {
+  transition: 0.5s;
+}
+a:hover{
+  opacity: 0.8;
 }
 
-#p_title {
-  color: black;
-  font-weight: bold;
-  font-family: arial;
-  size: 100px;
-  
+@media (max-width: 783px) {
+  input {
+  width: 80% !important;
+    margin-bottom: 10px;
+  }
+  #each_result {
+    margin: 10px 20px 10px 20px;
+  }
+  #search_button, #random {
+  transform: scale(0.7,0.7);
 }
-
-#p_content
-{
-color: black;
-  font-family: product sans;  
-}
-#link:hover {
-  text-decoration: none;
-}
-
-#random {
-  margin-left: 570px;
 }
