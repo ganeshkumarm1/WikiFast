@@ -1,27 +1,39 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>WikiBuild</title>
- </script>
- <script src = "wiki_fast.js"></script>
- <link rel = "stylesheet" href = "wiki_fast.css">
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wiki Fast</title>
+    <link rel = "stylesheet" href = "style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   </head>
   <body>
-    <div class = "container-fluid" id = "main">
-      <center><h1>WIKI FAST
-        </h1></center>
-
-    <center><div id = "search_btn_box">
-      <input id = "search_box" type = "text" class = "form form-control" placeholder = "Enter a word">
-      <div id = "button">
-      <button id = "search_button" class = "btn btn-danger" onclick = "search()">SEARCH</button>
-        <a href='http://en.wikipedia.org/wiki/Special:Random' target='_blank' ><button id = "random" class = "btn btn-warning">RANDOM</button></a>
-    </div>
-      </div></center>
-
-        <div id = "result"></div>
+    <div class = "container-fluid" id="main">
+      <div class="title-and-search">
+      <h1 id="title">Wiki Fast</h1>
+      by <a href="https://github.com/ganeshmkumar" target='_blank'>GaNeShKuMaRm </a> <span class="fa fa-smile-o"></span>
+      <div class="row" id="search-box">
+        <div class="col-md-6 col-md-offset-3">
+          <input type="text" class="form-control" placeholder="Search a topic .."><br>
+          or <a href='http://en.wikipedia.org/wiki/Special:Random' target='_blank'>Random Article</a>  
+        </div>
+          
       </div>
+      </div>
+      <div class="row" id="result">
+        <div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
+          
+        </div>
+      </div>
+      <div class="row" id="error">
+          <span class="fa fa-warning"></span><span> Topic not found</span>
+      </div>
+    </div>
   </body>
+
   <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src = "script.js"></script>
 </html>
+
+<!--<a href='http://en.wikipedia.org/wiki/Special:Random' target='_blank' ><button id = "random" class = "btn btn-warning-->
